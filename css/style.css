@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --wit: #f8f7f3;
+  --zwart: #303030;
+}
+body {
+  background-color: var(--wit);
+  color: var(--zwart);
+  font-family: "Roboto", sans-serif;
+}
+.gridbox {
+  background-color: var(--wit);
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+}
+h2 {
+  background-color: mediumpurple;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+h3 {
+  background-color: dodgerblue;
+  grid-column-start: 5;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
